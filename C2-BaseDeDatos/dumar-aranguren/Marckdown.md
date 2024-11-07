@@ -1,5 +1,5 @@
      
-**Descripción**
+**Documentación de  diagramas**
 
 **Course:** Representa los cursos ofrecidos. Atributos: Course_ID (clave primaria), Title, Description.
 
@@ -16,7 +16,7 @@ Un curso puede tener uno o más estudiantes: Esto se refleja en la tabla Course_
 
 ``Diagrama ER``
 
-**Descripción**
+**Descripción** 
 
 **Project:** Representa los proyectos en la empresa. Atributos: Project_ID (clave primaria), Name, Start_Date, End_Date.
 
