@@ -69,4 +69,44 @@ export class SongController {
       internalError(error, res);
     }
   };
+
+  async getSongsWithArtists(req, res) {
+    try {
+      // Buscar todas las canciones e incluir los artistas correspondientes
+      const songs = await Song.findAll({
+        include: { model: Artist, as: "artist" },
+      });
+
+      // Retornar las canciones con sus respectivos artistas
+      res.status(200).json(songs);
+    } catch (error) {
+      // Manejar errores
+      res.status(500).json({ error: error.message });
+    }
+  }
+
+  async getArtistsBySongDuration(req, res) {
+    const { duration } = req.params;  // Obtener la duración mínima desde la URL
+    try {
+      // Buscar artistas que tienen canciones con duración mayor o igual
+      const artists = await Artist.findAll({
+        include: {
+          model: Song,
+          as: "songs",
+          where: { duration: { [Op.gte]: duration } },  // Filtrar canciones por duración
+        },
+      });
+
+      // Si no se encuentran artistas, devolver un 404
+      if (artists.length === 0) {
+        return res.status(404).json({ message: "No artists found with songs of this duration or longer" });
+      }
+
+      // Retornar los artistas con sus canciones filtradas por duración
+      res.status(200).json(artists);
+    } catch (error) {
+      // Manejar errores
+      res.status(500).json({ error: error.message });
+    }
+  }
 }
