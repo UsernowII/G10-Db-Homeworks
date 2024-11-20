@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 1000,
+    "category": "Electronics",
+    "description": "A high performance laptop"
+  },
+  {
+    "id": 2,
+    "name": "Coffee Mug",
+    "price": 10,
+    "category": "Kitchenware",
+    "description": "A ceramic coffee mug"
+  },
+  {
+    "id": 3,
+    "name": "Smartphone",
+    "price": 800,
+    "category": "Electronics",
+    "description": "Un teléfono inteligente de alta gama"
+  },
+  {
+    "id": 4,
+    "name": "Libro de cocina",
+    "price": 25,
+    "category": "Libros",
+    "description": "Un libro de recetas para principiantes"
+  },
+  {
+    "id": 5,
+    "name": "Tablet",
+    "price": 600,
+    "category": "Electronics",
+    "description": "Una tableta para navegación y entretenimiento"
+  },
+  {
+    "id": 6,
+    "name": "Cafetera",
+    "price": 50,
+    "category": "Kitchenware",
+    "description": "Una cafetera automática para un café perfecto"
+  },
+  {
+    "id": 7,
+    "name": "Reloj inteligente",
+    "price": 200,
+    "category": "Accesorios",
+    "description": "Un reloj inteligente para seguimiento de actividad"
+  },
+  {
+    "id": 8,
+    "name": "Cámara fotográfica",
+    "price": 400,
+    "category": "Electronics",
+    "description": "Una cámara DSLR para fotógrafos principiantes"
+  },
+  {
+    "id": 9,
+    "name": "Cámara fotográfica",
+    "price": 400,
+    "category": "Electronics",
+    "description": "Una cámara DSLR para fotógrafos principiantes"
+  },
+  {
+    "id": 10,
+    "name": "Computador portatil",
+    "price": 800,
+    "category": "Electronics",
+    "description": "Un portatil de ultima generación"
+  }
+]
